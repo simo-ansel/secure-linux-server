@@ -215,10 +215,9 @@ Jul 08 13:13:44 secure-lab sshd[4190]: pam_unix(sshd:session): session opened fo
 
 ## ✅ Obiettivi del progetto
 
-- Sistema: Installazione VM e strumenti di rete/sicurezza (UFW, net-tools, ecc.)
-- SSH: Hardening accessi, disabilitazione root, rimozione password, uso CA
-- Fail2Ban: Protezione contro tentativi di accesso SSH con blocco IP
-- Logging: Monitoraggio file con auditd, attivazione rsyslog
-- Scripting: Script secure-me.sh per automatizzare le configurazioni iniziali
-- Chiavi CA: Accesso SSH permesso solo tramite chiavi firmate da una Certification Authority
-- Documentazione: README con test, configurazioni, spiegazioni e snapshot
+- **Sistema**: Installazione VM e strumenti di rete/sicurezza (UFW, net-tools, ecc.)
+- **SSH**: Hardening accessi, disabilitazione root, rimozione password, uso CA
+- **Fail2Ban**: Protezione contro tentativi di accesso SSH con blocco IP
+- **Logging**: Monitoraggio file con auditd, attivazione rsyslog
+- **Scripting**: Script secure-me.sh per automatizzare le configurazioni iniziali
+- **Chiavi CA**: Accesso SSH permesso solo tramite chiavi firmate da una Certification Authority
