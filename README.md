@@ -39,9 +39,7 @@ Default: deny (incoming), allow (outgoing), disabled (routed)
 
 File usati:
 - `/etc/ssh/sshd_config`: lasciato di default
-- `/etc/ssh/sshd_config.d/50-cloud-init.conf`:  
-  Contenuto iniziale commentato:
-  ```#PasswordAuthentication yes ```
+- `/etc/ssh/sshd_config.d/50-cloud-init.conf`:  contenuto iniziale commentato: `#PasswordAuthentication yes `
 
 
 - `/etc/ssh/sshd_config.d/99-secure.conf` (aggiunto):
@@ -182,16 +180,23 @@ Jul 08 13:13:44 secure-lab sshd[4190]: pam_unix(sshd:session): session opened fo
 ## 📸 Snapshot
 
 🧊 **01-clean-setup** 
-Ubuntu aggiornato, SSH attivo, UFW abilitato, root disabilitato
+- Ubuntu aggiornato
+- SSH attivo
+- UFW abilitato
+- root disabilitato
 
 🧊 **02-secure-base-config**  
-SSH hardening base, Fail2Ban attivo, test fallimento eseguito
+- SSH hardening base
+- Fail2Ban attivo
+- Test fallimento eseguito
 
 🧊 **03-auditd-file-monitoring**
-auditd monitor file attivo, test su segreto.txt completato
+- auditd monitor file attivo
+- Test su segreto.txt completato
 
 🧊 **04-ssh-ca-auth**  
-Accesso consentito solo con chiavi firmate da CA, authorized_keys ignorato
+- Accesso consentito solo con chiavi firmate da CA
+- authorized_keys ignorato
 
 ---
 
