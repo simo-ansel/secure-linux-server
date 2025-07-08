@@ -1,6 +1,8 @@
 
 # 🧾 Server Hardening – secure-lab
 
+🔒 Tutti i file di configurazione, output e percorsi sono documentati in questo README. Lo script `secure-me.sh` automatizza la configurazione base del sistema.
+
 ## 📅 Fase 1 – Setup iniziale (07/07/2025)
 
 ### 🖥️ Informazioni VM
@@ -213,13 +215,10 @@ Jul 08 13:13:44 secure-lab sshd[4190]: pam_unix(sshd:session): session opened fo
 
 ## ✅ Obiettivi del progetto
 
-| Area         | Attività                                                         
-|--------------|------------------------------------------------------------------|--------|
-| Sistema      | Installazione VM + strumenti di rete/sicurezza                  
-| SSH          | Hardening accessi, disabilitazione root e password              
-| Fail2Ban     | Protezione contro brute-force SSH                               
-| Logging      | Monitoraggio file con auditd + rsyslog configurato              
-| Scripting    | Script bash per hardening iniziale (`secure-me.sh`)             
-| Chiavi CA     | Accesso SSH con chiavi firmate da CA (Trusted CA Key)           
-| Documentazione | Output test, configurazioni, snapshot                          
----
+- Sistema: Installazione VM e strumenti di rete/sicurezza (UFW, net-tools, ecc.)
+- SSH: Hardening accessi, disabilitazione root, rimozione password, uso CA
+- Fail2Ban: Protezione contro tentativi di accesso SSH con blocco IP
+- Logging: Monitoraggio file con auditd, attivazione rsyslog
+- Scripting: Script secure-me.sh per automatizzare le configurazioni iniziali
+- Chiavi CA: Accesso SSH permesso solo tramite chiavi firmate da una Certification Authority
+- Documentazione: README con test, configurazioni, spiegazioni e snapshot
