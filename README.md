@@ -92,7 +92,7 @@ bantime = 600
 
 **Verifica:**
 ```sudo auditctl -l```  
-→ -w /home/anshell/segreto.txt -p rwxa -k test_file_access
+→ `-w /home/anshell/segreto.txt -p rwxa -k test_file_access`
 
 ### 📝 Test auditd
 Modificato `segreto.txt` con `nano`, `cat`, ecc.  
